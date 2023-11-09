@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Multimedia Rocket: Interactive Diagrams</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<main>
+<div class="video">
+<script>
+  function videoEnded() {
+      location.href="menu.html";
+   }
+</script>
+<video id="video1" autoplay="autoplay" controls="controls" onended="videoEnded()">
+  <source src="diagrams.mp4">
+</video>
+</div>
+</main>
+
+<footer>
+Copyright &copy; 2023 <a href="mailto:smsmeenk@iastate.edu">Sadie Smeenk</a>
+</footer>
+
+</body>
+</html>
