@@ -1,18 +1,19 @@
 
   header { width: 100%; height: 7rem;
+		background-image: url(rising-sun.png);
+		background-repeat: no-repeat;
+		background-position: top center;
 		background-size: 15rem; 
-		background-color: #283139;
-		color: white;  }
+		background-color: #F58E79;  }
   
-  body {  background-color: #B5C0CA;  }
+  body {  background-image: linear-gradient(0deg, #CBE6EF, #E5F2F7, #F0F8FA, #FBD0C7, #FCDED8, #F8E3CC);  }
 
   main {  }
 
   h1 {  font-family: 'Solway', serif;
 	text-align: center;
 	font-size: 5rem;
-	margin: 0px;
-	color: white;  }
+	margin: 0px;  }
 
   h2 {  font-family: 'Solway', serif;
 	margin: 0px;
@@ -27,25 +28,18 @@
   p {  font-family: 'Roboto', sans-serif;  }
 
   p.footer  {text-align: center;
-		margin: 0px 0px 5px 0px;
-		color: white;  }
+		margin: 0px 0px 5px 0px;  }
 
   ul {  font-family: 'Roboto', sans-serif;  }
 
   li.space {  margin: 0px 0px 5px 0px;  }
 
-  footer {  background-color: #283139; 
+  footer {  background-color: #BBDEEB; 
 	    padding: 20px;  }
 
   a, a:visited {  color: black;  }
 
-
-  a#header {  text-decoration: none;
-		color: white;  }
-  footer a {  color: white;  }
-
-  h4.biopage {  margin: 15px 0px -10px 0px;
-		font-size: 1.15rem;  }
+  a#header {  text-decoration: none;  }
 
   ul#hmenu  {  margin: 0;
 		padding: 0;
@@ -56,9 +50,9 @@
   ul#hmenu li a {  display: block;
 			text-align: center;
 			text-decoration: none;
-			background-color: white;
 			font-size: 1rem;
 			border-radius: 0.5rem;
+			background-color: #F58E79;
 			padding: 0.75rem;
 			margin: 0.5rem;  }
 
@@ -67,40 +61,27 @@
 		list-style-type: none;
 		display: flex;
 		flex-direction: row;
-		flex-wrap: wrap;
 		justify-content: center;  }
-
 
   ul#pmenu li a {  display: block;
 			text-align: center;
 			text-decoration: none;
-			color: white;
 			font-size: 1rem;
-			padding: 0.5rem;
-			margin: 0.75rem;
-			margin-top: 1.25rem;
-			margin-bottom: 0rem;
-			min-width: 7rem;
-			max-width: 12.5rem    }
-
-
-a#homebutton {  background-color: #394550 !important;
-			height: 5rem;
-			line-height: 5rem;  }
-a#rbutton {  background-color: #4A5A68 !important;
-			height: 5rem;
-			line-height: 5rem;  }
-a#portbutton {  background-color: #5B6E80 !important;
-			height: 5rem;
-			line-height: 5rem;  }
-a#contactbutton {  background-color: #6D8397 !important;
-			height: 5rem;
-			line-height: 5rem;  }
-
+			border-radius: 0.5rem;
+			background-color: #FFDA66;
+			padding: 0.75rem;
+			margin: 0.5rem;
+			min-width: 15vw;
+			max-width: 20vw;  }
 
   img.portfolio-piece {  width: 100%;  }
 
   img.home-photo {  width: 100%;  }
+
+  div#note {    background-color: rgba(255, 255, 255, .5);
+		text-align: center;
+		padding: 1.5rem;
+		margin: 40px;  }
 
 
  @media screen and (max-width:840px) {
@@ -197,7 +178,7 @@ a#contactbutton {  background-color: #6D8397 !important;
 		"contact  profile  profile"
 		"education	education	education"
 		"experience	experience	experience"
-		"skills		activities	honors";  }
+		"skills		skills		activities";  }
 
 
   div#contact  {  background-color: rgba(255, 255, 255, .5);
@@ -285,9 +266,9 @@ a#contactbutton {  background-color: #6D8397 !important;
 
 		grid-template-areas:
 		"contact  profile  profile"
-		"education  education  skills"
-		"experience  experience  activities"
-		"experience  experience  honors";  }
+		"experience  experience  skills"
+		"experience  experience  education"
+		"experience  experience  activities";  }
 
   div#contact  {  background-color: rgba(255, 255, 255, .5);
 			padding: 1.5rem;
@@ -343,6 +324,54 @@ a#contactbutton {  background-color: #6D8397 !important;
 
 
 }
+
+
+  @media (prefers-color-scheme: dark) { 
+
+  body {  background-image: linear-gradient(0deg, #AA585B 10%, #383D71, #063D71, #042C50, #02192E, #010911 50%);  }
+
+  main {  }
+
+  header { width: 100%; height: 7rem;
+		background-image: none;
+		background-color: #AA585B;  }
+  footer {  background-image: url(setting-sun.png);
+		background-repeat: no-repeat;
+		background-size: 10rem; 
+		background-position: bottom center;
+		background-color: #02192E; 
+	    	padding: 20px;  }
+
+  div#about {  background-color: rgba(255, 255, 255, .25);  }
+  div#contact-box {  background-color: rgba(255, 255, 255, .25);  }
+  div#contact  {  background-color: rgba(255, 255, 255, .25);  }
+  div#profile  {  background-color: rgba(255, 255, 255, .25);  }
+  div#education  {  background-color: rgba(255, 255, 255, .25);  }
+  div#experience {  background-color: rgba(255, 255, 255, .25);  }
+  div#skills  {  background-color: rgba(255, 255, 255, .25);  }
+  div#activities {  background-color: rgba(255, 255, 255, .25);  }
+  div#honors {  background-color: rgba(255, 255, 255, .25);  }
+
+  div#PA {  background-color: rgba(255, 255, 255, .25);  }
+  div#PB {  background-color: rgba(255, 255, 255, .25);  }
+  div#PC  {  background-color: rgba(255, 255, 255, .25);  }
+  div#PD  {  background-color: rgba(255, 255, 255, .25);  }
+  div#PE  {  background-color: rgba(255, 255, 255, .25);  }
+  div#PF {  background-color: rgba(255, 255, 255, .25);  }
+
+  h1 {  color: white;  }
+  h2 {  color: white;  }
+  h3 {  color: white;  }
+  h4 {  color: white;  }
+  p {  color: white;  }
+  ul {  color: white;  }
+  a, a:visited {  color: white;  }
+
+  ul#hmenu li a {  background-color: #AA585B;  }
+
+  ul#pmenu li a {  background-color: white; color: #010911;  }
+
+ }
 
   @media print { 
 
